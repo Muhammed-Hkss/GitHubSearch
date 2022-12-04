@@ -20,7 +20,7 @@ const Stars = () => {
       })
       setStarred(newData)
     })
-  }, [])
+  }, [login])
 
 
   return (
