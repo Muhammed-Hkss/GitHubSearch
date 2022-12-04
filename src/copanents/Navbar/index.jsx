@@ -3,7 +3,7 @@ import {SerachUserQueri} from '../../config/index'
 import cls from './Navbar.module.scss'
 import { BsGithub } from 'react-icons/bs'
 import { AiOutlineMenu } from 'react-icons/ai'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MainUtils } from "../../utils/Utils";
 
 const Navbar = () => {

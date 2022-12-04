@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams , Link, useNavigate } from 'react-router-dom'
+import { useParams , Link } from 'react-router-dom'
 import { GetUserFollowers, UserMoreData } from '../../config'
 import cls from './Followers.module.scss'
 

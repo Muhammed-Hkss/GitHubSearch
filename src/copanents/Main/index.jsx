@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { GetUserRepository, UserMoreData } from '../../config'
+import { UserMoreData } from '../../config'
 import Navbar from '../Navbar'
 import {AiOutlineTeam} from 'react-icons/ai'
 import cls from './Main.module.scss'
