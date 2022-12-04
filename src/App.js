@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Main from './copanents/Main';
+import UserMore from './copanents/UserMore';
+import Followers from './pages/Followers';
+import Following from './pages/Following';
+import Overview from './pages/Overview';
+import Repositories from './pages/Repositories';
+import RepositoriesMe from './pages/RepositoriesMe';
+
+import Stars from './pages/Stars';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+
+      <Route path="/" element={<Main />}>
+        <Route path="/overview" element={<Overview />} />
+        <Route path="/repositories" element={<RepositoriesMe />} />
+        <Route path="/stars" element={<Stars />} />
+        <Route path='/followers' element={<Followers/>}/>
+        <Route path='/following' element={<Following/>}/>
+      </Route>
+      
+
+
+      <Route path='/users/:login' element={<UserMore />}> 
+        <Route path="overview" element={<Overview />} />
+        <Route path="repositories" element={<Repositories />} />
+        <Route path="stars" element={<Stars />} />
+        <Route path='followers' element={<Followers/>}/>
+        <Route path='following' element={<Following/>}/>
+      </Route>
+    
+    </Routes>
   );
 }
 
 export default App;
+
+

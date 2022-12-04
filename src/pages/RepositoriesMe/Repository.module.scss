@@ -1,0 +1,73 @@
+.repositories_data{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  gap: 20px;
+
+  .repositories{
+    padding: 0 10px;
+    width: 40%;
+    height: 120px;
+    border: solid 1px gray;
+    border-radius: 20px;
+
+    a{
+      text-decoration: none;
+      color: rgb(0, 162, 255);
+      font-weight: 500;
+    }
+  }
+
+  .loading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width:840px) {
+  .repositories_data{
+    display: flex;
+    justify-content: center;
+    
+    .repositories{
+      padding: 0 10px;
+      width: 40%;
+      height: 120px;
+      border: solid 1px gray;
+      border-radius: 10px;
+
+      a{
+        text-decoration: none;
+        color: rgb(0, 162, 255);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:425px) {
+  .repositories_data{
+    display: flex;
+    justify-content: center;
+    
+    .repositories{
+      padding: 0 10px;
+      width: 80%;
+      height: 120px;
+      border: solid 1px gray;
+      border-radius: 10px;
+
+      a{
+        text-decoration: none;
+        color: rgb(0, 162, 255);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
