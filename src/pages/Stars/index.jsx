@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { GetUserStarred } from '../../config'
-// import { AiOutlineDown } from 'react-icons/ai'
-// import { HiOutlineStar } from 'react-icons/hi'
 
 import StarsItem from './StarsItem/StarsItem'
 

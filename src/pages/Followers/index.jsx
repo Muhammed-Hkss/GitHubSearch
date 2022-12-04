@@ -4,15 +4,15 @@ import { GetUserFollowers, UserMoreData } from '../../config'
 import cls from './Followers.module.scss'
 
 const Followers = () => {
-  const [userInfo , setUserInfo] = useState('')
+  // const [userInfo , setUserInfo] = useState('')
   const [followersData , setFollowersData] = useState('')
   const {login} = useParams()
 
-  useEffect(() => {
-    UserMoreData(login).then(r => {
-      setUserInfo(r.data)
-    })  
-  } , []) 
+  // useEffect(() => {
+  //   UserMoreData(login).then(r => {
+  //     setUserInfo(r.data)
+  //   })  
+  // } , []) 
 
   useEffect(() => {
     GetUserFollowers(login).then(r => {

@@ -5,15 +5,15 @@ import cls from './Following.module.scss'
 
 const Following = () => {
   const [followingData , setFollowingData] = useState('')
-  const [userInfo , setUserInfo] = useState('')
+  // const [userInfo , setUserInfo] = useState('')
   const {login} = useParams()
 
 
-  useEffect(() => {
-    UserMoreData(login).then(r => {
-      setUserInfo(r.data)
-    })  
-  } , [])
+  // useEffect(() => {
+  //   UserMoreData(login).then(r => {
+  //     setUserInfo(r.data)
+  //   })  
+  // } , [])
 
 
   useEffect(() => {
