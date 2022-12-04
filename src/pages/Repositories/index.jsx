@@ -39,7 +39,7 @@ const Repositories = () => {
       })
       setRepostPerPage(newData)
     })
-  } , [ reposData , page ])
+  } , [ login , page ])
 
   function nextPagination(){
 		if(page !== TOTAL_PAGE){

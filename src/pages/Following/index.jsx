@@ -13,7 +13,7 @@ const Following = () => {
     GetUserFollowing(login).then(r => {
       setFollowingData(r.data)
     })
-  } , [])
+  } , [login])
   return (
     <div className={cls.container}>
 
