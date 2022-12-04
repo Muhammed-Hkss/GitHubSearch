@@ -39,7 +39,9 @@ const Navbar = () => {
     }
   }, [debouncedSearchTerm])
 
-
+  const clearInput = () => {
+    setUsername('')
+  };
 
 
   return (
@@ -53,6 +55,7 @@ const Navbar = () => {
               className={cls.search_input}
               type="text" 
               placeholder="Search"
+              value={username}
               onChange={e => setUsername(e.target.value)} 
             />
           </div>
@@ -71,7 +74,7 @@ const Navbar = () => {
                   
                   return(
                     <li key={item.id}>
-                      <Link to={`/users/${item.login}`}>{item.login}</Link> 
+                      <Link onClick={clearInput} to={`/users/${item.login}`}>{item.login}</Link> 
                     </li>
                   )
                 })
