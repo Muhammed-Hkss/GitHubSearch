@@ -11,7 +11,7 @@ const Followers = () => {
     GetUserFollowers(login).then(r => {
       setFollowersData(r.data)
     })
-  } , [])
+  } , [login])
   return (
     <div className={cls.container}>
       

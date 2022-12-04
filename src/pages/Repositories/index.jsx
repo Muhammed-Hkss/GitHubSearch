@@ -27,7 +27,7 @@ const Repositories = () => {
       })
       setreposData(newData)
     })
-  } , [])
+  } , [login])
 
   useEffect(() => {
     GetUserRepositoryPerPage(login, page).then(r => {
