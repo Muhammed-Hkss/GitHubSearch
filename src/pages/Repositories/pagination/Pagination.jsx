@@ -33,6 +33,7 @@ const Pagination = ({TOTAL_PAGE , page , setPage}) => {
 
 			<ul className={cs.list}>
 				{
+          // 
 					Array.from({length: TOTAL_PAGE}).map((item , i) => (
 						<li 
               className={page === i + 1 ? `${cs.li} ${cs.active}` : cs.li}

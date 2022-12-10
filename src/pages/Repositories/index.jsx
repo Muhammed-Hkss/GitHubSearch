@@ -36,7 +36,7 @@ const Repositories = () => {
     return debouncedValue;
   }
 
-
+  
 
 
   React.useEffect(() => {
@@ -81,7 +81,7 @@ const Repositories = () => {
     GetUserRepository(login).then(r => {
       setReposLanguage(r.data)
     })
-  } , []) 
+  } , [login]) 
 
 
 
@@ -96,12 +96,16 @@ const Repositories = () => {
       setReposData(newData)
       setData(newData)
     })
-  } , [])
+  } , [login])
+
+  useEffect(() => {
+		update()
+	}, [ ])
 
 	useEffect(() => {
 		update()
 	}, [page, data ])
-
+// 
 
 function update() {
 		const base = data?.slice(
