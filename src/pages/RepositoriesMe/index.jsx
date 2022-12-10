@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react'
 import { GetUserRepository } from '../../config'
-import Loading from '../../copanents/Loading'
+import Loading from '../../copanents/Loading' 
 import cls from './Repository.module.scss'
 
 const RepositoriesMe = () => {

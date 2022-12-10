@@ -22,31 +22,6 @@
   .ORPP_list{
     display: none;
   }
-
-  // .followers_data{
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   border-bottom: 1px solid gray;
-  //   padding: 10px 20px;
-
-
-  //   .img_name_data{
-  //     display: flex;
-  //     align-items: center;
-  //     gap: 20px;
-
-  //     .followers_img{
-  //       width: 50px;
-  //       border-radius: 50%;
-  //     }
-  
-  //     .followers_name{
-  //       display: flex;
-  //     }
-  //   }
-
-  // }
 }
 
 @media screen and (min-width:840px) {
@@ -106,7 +81,7 @@
           display: flex;
           align-items: center;
           text-decoration: none;
-          color:rgb(47, 47, 47);
+          color:gray;
         }
       }
     }

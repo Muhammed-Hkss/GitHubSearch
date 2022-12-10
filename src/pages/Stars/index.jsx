@@ -8,8 +8,6 @@ const Stars = () => {
   const [starred , setStarred] = useState('')
   const { login } = useParams()
 
-  console.log(starred.length);
-
   useEffect(() => {
     GetUserStarred(login).then(r => {
       const newData = Object.entries(r.data).map(([id, item]) => {

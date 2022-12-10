@@ -28,7 +28,7 @@ const Followers = () => {
                     style={{
                       padding:'5px 30px',
                       backgroundColor:'aliceblue',
-                      border:'1px solid gray',
+                      border:'1px solid black',
                       borderRadius:'8px',
                       cursor:'pointer',
                     }}

@@ -22,7 +22,6 @@ const Following = () => {
         <div className={cls.repositories_data}>
           {
             followingData && followingData.map(item => {
-                // console.log(item);
                 return(
                   <div className={cls.following_data} key={item.id}>
                     <Link className={cls.img_name_data} to={`/users/${item.login}`}>
@@ -33,7 +32,7 @@ const Following = () => {
                       style={{
                         padding:'5px 30px',
                         backgroundColor:'aliceblue',
-                        border:'1px solid gray',
+                        border:'1px solid black',
                         borderRadius:'8px',
                         cursor:'pointer',
                       }}
