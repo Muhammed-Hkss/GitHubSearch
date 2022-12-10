@@ -96,15 +96,13 @@ const Repositories = () => {
       setReposData(newData)
       setData(newData)
     })
-  } , [login])
+  } , [login , ])
 
-  useEffect(() => {
-		update()
-	}, [ ])
 
-	useEffect(() => {
-		update()
-	}, [page, data ])
+
+	// useEffect(() => {
+	// 	update()
+	// }, [page , data ])
 // 
 
 function update() {
