@@ -13,7 +13,6 @@ import useDarkMode from './hooks/useDarkMode';
 
 
 function App() {
-  const [isDarkMode, setDarkMode] = useDarkMode()
 
 
 
