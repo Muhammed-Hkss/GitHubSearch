@@ -37,7 +37,7 @@ const Navbar = ({themeToggler}) => {
         setData(res.data.items)
     })
     }
-  }, [debouncedSearchTerm])
+  }, [debouncedSearchTerm , data])
 
   
 

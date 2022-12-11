@@ -100,18 +100,18 @@ const Repositories = () => {
 
 
 
-// 	useEffect(() => {
-// 		update()
-// 	}, [page , data ])
-// // 
+	useEffect(() => {
+		update()
+	}, [page , data ])
+// 
 
-// function update() {
-// 		const base = data?.slice(
-// 			(page - 1) * PAGE_SIZE,
-// 			(page - 1) * PAGE_SIZE + PAGE_SIZE
-// 		)
-// 		setBase(base)
-// 	}
+function update() {
+		const base = data?.slice(
+			(page - 1) * PAGE_SIZE,
+			(page - 1) * PAGE_SIZE + PAGE_SIZE
+		)
+		setBase(base)
+	}
 
   return (
     <>
