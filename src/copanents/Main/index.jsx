@@ -6,7 +6,7 @@ import cls from './Main.module.scss'
 import { Link, Outlet } from 'react-router-dom'
 import { MainUtils } from '../../utils/Utils'
 
-const Main = ({themeToggler}) => {
+const Main = () => {
   const [userInfo , setUserInfo] = useState('')
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Main = ({themeToggler}) => {
   return (
     <>
       <div> 
-        <Navbar themeToggler={themeToggler}/>
+        <Navbar />
       </div>
 
 

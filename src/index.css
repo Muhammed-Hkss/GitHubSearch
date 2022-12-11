@@ -1,0 +1,14 @@
+body {
+  background-color: #fff;
+  color: #000;
+  --button-text: #000;
+  --button-bg: #fff;
+}
+
+body.dark {
+  background-color: #000;
+  color: #fff;
+  --button-text: #fff;
+  --button-bg: #000;
+  
+}

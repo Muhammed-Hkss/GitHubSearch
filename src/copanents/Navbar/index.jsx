@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { MainUtils } from "../../utils/Utils";
 import BlackThemeBtn from "../../hooks/BlackThemeBtn";
 
-const Navbar = ({themeToggler}) => {
+const Navbar = () => {
   const [data, setData] = useState('');
   const [username, setUsername] = useState("");
   const [open , setOpen] = React.useState(false)
@@ -67,7 +67,7 @@ const Navbar = ({themeToggler}) => {
 
 
           <div className={cls.dark_mode_btn}>
-            <BlackThemeBtn themeToggler={themeToggler} />
+            <BlackThemeBtn/>
           </div>
 
 
@@ -113,7 +113,7 @@ const Navbar = ({themeToggler}) => {
             
             <ul className={cls.ORPP_list}>
               <div className={cls.dark_mode_menu_btn}>
-                <BlackThemeBtn themeToggler={themeToggler} />
+                <BlackThemeBtn />
               </div>
               {
                 MainUtils.map(item => (

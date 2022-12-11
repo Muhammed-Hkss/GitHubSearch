@@ -6,7 +6,7 @@ import cls from './UserMore.module.scss'
 import Navbar from '../Navbar'
 import { MainUtils } from '../../utils/Utils'
 
-const UserMore = ({themeToggler}) => {
+const UserMore = () => {
   const [userInfo , setUserInfo] = useState('')
 
   const { login } = useParams()
@@ -28,7 +28,7 @@ const UserMore = ({themeToggler}) => {
   return (
     <>
       <div>
-        <Navbar themeToggler={themeToggler}/>
+        <Navbar/>
       </div>
 
 
