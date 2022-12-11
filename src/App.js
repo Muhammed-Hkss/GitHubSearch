@@ -9,14 +9,8 @@ import Repositories from './pages/Repositories';
 import RepositoriesMe from './pages/RepositoriesMe';
 import Stars from './pages/Stars';
 
-
-
+// 
 function App() {
-
-
-
-
-  
 
   return (
     <>
