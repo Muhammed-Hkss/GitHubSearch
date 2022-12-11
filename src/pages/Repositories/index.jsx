@@ -103,7 +103,7 @@ const Repositories = () => {
 	useEffect(() => {
 		update()
 	}, [page , data ])
-// 
+
 
 function update() {
 		const base = data?.slice(
