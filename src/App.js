@@ -8,7 +8,6 @@ import Overview from './pages/Overview';
 import Repositories from './pages/Repositories';
 import RepositoriesMe from './pages/RepositoriesMe';
 import Stars from './pages/Stars';
-import useDarkMode from './hooks/useDarkMode';
 
 
 
